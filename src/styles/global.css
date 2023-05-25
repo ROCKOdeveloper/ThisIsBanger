@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@600&family=Courier+Prime&family=Montserrat:wght@900&display=swap');
+
+html {
+    background-color: black;
+}
+
+body {
+    background-image: url("/public/ACROPOLIS\ Fondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
