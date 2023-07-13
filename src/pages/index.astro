@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 import logo from "/Logo.png";
-import event from "/ACROPOLIS.jpg";
+import event from "/evento2.jpg";
 ---
 
 <html lang="es">
@@ -12,20 +12,25 @@ import event from "/ACROPOLIS.jpg";
     <meta name="generator" content={Astro.generator} />
     <title>This Is Banger</title>
   </head>
-  <body>
+  <body class="font-sans">
     <header
-      class="flex items-center justify-between px-4 py-2 bg-transparent z-10 fixed"
+      class="w-full flex items-center justify-between px-4 py-2 bg-transparent z-10 fixed"
     >
       <div class="flex items-center">
         <img class="h-10 w-auto mr-2" src={logo} alt="Logo" />
       </div>
+      <!--       <a href="http://wa.me/+573007597945" target="_blank" rel="noopener noreferrer">
+        <button class="text-white mx-5 px-2 py-1 w-fit text-xs hover:text-white font-semibold right-0 border border-white hover:border-transparent hover:bg-red-600 rounded-lg transition duration-100 ease-out delay-75">Contactanos</button>
+      </a> -->
     </header>
     <main class="flex flex-col items-center justify-center">
-      <a href="https://wa.me/+573007597945?text=Estoy interesado en tu proximo evento">
+      <a
+        href="https://wa.me/+573007597945?text=Estoy interesado en tu proximo evento"
+      >
         <img
-        class="w-full h-auto md:w-auto md:h-screen p-7 shadow-white drop-shadow-2xl"
-        src={event}
-        alt="Evento proximo"
+          class="w-full h-auto md:w-auto md:h-screen p-7 shadow-white drop-shadow-2xl"
+          src={event}
+          alt="Evento proximo"
         />
       </a>
       <div class="w-7/10 md:w-3/5 lg:w-1/2 xl:w-2/5 text-center mt-8">
@@ -33,12 +38,16 @@ import event from "/ACROPOLIS.jpg";
       </div>
     </main>
     <footer class="text-white py-4">
-      <div class="container mx-auto text-center md:text-left px-4 flex flex-row">
+      <div
+        class="container mx-auto text-center md:text-left px-4 flex flex-row"
+      >
         <p class="text-lg">Conoce más en</p>
         <ul class="flex flex-row pl-3 content-center">
           <!-- instagram -->
           <li class="my-auto">
-            <a href="https://instagram.com/javierbangoficial?igshid=MzRlODBiNWFlZA==">
+            <a
+              href="https://instagram.com/javierbangoficial?igshid=MzRlODBiNWFlZA=="
+            >
               <svg
                 class="w-7 h-auto"
                 xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +104,9 @@ import event from "/ACROPOLIS.jpg";
           </li>
           <!-- tiktok -->
           <li class="my-auto">
-            <a href="https://www.tiktok.com/@ofc_thisisbanger?_t=8cXaHjHjjXB&_r=1">
+            <a
+              href="https://www.tiktok.com/@ofc_thisisbanger?_t=8cXaHjHjjXB&_r=1"
+            >
               <svg
                 class="w-7 h-auto"
                 height="79"
@@ -122,7 +133,7 @@ import event from "/ACROPOLIS.jpg";
       </div>
     </footer>
     <script>
-      const endDate = new Date("Jun 24, 2023 21:00:00").getTime();
+      const endDate = new Date("august 5, 2023 21:00:00").getTime();
       const intervalId = setInterval(() => {
         const now = new Date().getTime();
         const distance = endDate - now;
